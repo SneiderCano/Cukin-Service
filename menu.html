@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital</title>
+    <link rel="stylesheet" href="menu_style.css">
+</head>
+<body>
+  <!-- Empezamos con el contenedor para todo-->
+    <div class="menu-container">
+        <!--Insertamos imagen-->
+        <header>
+            <!--Mensajes de bienvenida-->
+            <h1>Bienvenidos Rancho Picapiedra</h1>
+           <img src="Imagenes/Picapiedra.png" width="350" height="240" alt="picapiedra">
+           <h2>Mesa #1 </h2>
+        </header>
+        
+        <section id="mainMenu" class="main-menu">
+            <button onclick="loadCategory('hamburguesas')">Hamburguesas</button>
+            <button onclick="loadCategory('perritos')">Perritos Calientes</button>
+            <button onclick="loadCategory('lasaña')">Lasañas</button>
+            <button onclick="loadCategory('gaseosas')">Gaseosas</button>
+            <button onclick="loadCategory('pizzas')">Pizzas</button>
+            <button onclick="loadCategory('helados')">Helados</button>
+            <button onclick="loadCategory('asados')">Asados</button>
+            <button onclick="loadCategory('chuzos')">Chuzos</button>
+        </section>
+
+           <!--Botones del menu-->
+        <section class="menu-categorias" id="menuItems"></section>
+
+        <!--Boton para volver al menu-->
+        <button id="backButton" class="back-button" onclick="showMainMenu()">Volver al Menú Principal</button>
+
+        <!--Carrito de compras-->
+        <div id="cart" class="cart">
+            <h2>Carrito de Compras</h2>
+            <div id="cartItems"></div>
+            <p>Total: <span id="cartTotal">0</span></p>
+            <button id="chekoutButton" onclick="checkout()">Realizar pedido</button>
+        </div>
+      
+
+    </div>
+
+    <script src="menu_scripts.js"></script>
+</body>
+</html>  
+</body>
+</html>

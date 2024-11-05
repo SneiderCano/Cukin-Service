@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cukin_Service Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-login">
+        <img src="Imagenes/imagen2.png" alt="Logo Cukin_Service" class="Bambam">
+        <h1>Iniciar Sesión</h1>
+
+        <form method="POST" action="login.php" id="formulario-inicio" >
+            <!--input para el email-->
+            <div class="form-group">
+                <label for="login-email">Correo Electrónico</label>
+                <input type="email" id="login-email" name="Email" required>
+            </div>
+
+            <!--Input para la contraseña-->
+            <div class="form-group">
+                <label for="login-password">Ingrese Contraseña</label>
+                <input type="password" id="login-password" name="password" required>
+            </div>
+
+            <!--checkbox de mostrar contraseña-->
+            <div class="form-group form-check">
+                <input type="checkbox" id="mostrar-contraseña">
+                <label for="mostrar-contraseña">Mostrar contraseña</label>
+            </div>
+
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

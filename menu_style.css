@@ -112,7 +112,7 @@ header h1, header h2 {
 .menu-item .price{
     margin-top: 0;
     font-size: 20px;
-    color: red;
+    color: #000;
 }
 
 /* Estilos para el carrito */

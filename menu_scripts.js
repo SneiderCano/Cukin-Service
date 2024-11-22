@@ -94,7 +94,6 @@ const menuData = {
 };
 
 
-
 // Función para cargar la categoría seleccionada
 function loadCategory(categoria) {
     const menuItemsDiv = document.getElementById('menuItems');

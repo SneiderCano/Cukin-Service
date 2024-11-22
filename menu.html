@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Digital</title>
     <link rel="stylesheet" href="menu_style.css">
 </head>
+
 <body>
-  <!-- Empezamos con el contenedor para todo-->
+    <!-- Empezamos con el contenedor para todo-->
     <div class="menu-container">
         <!--Insertamos imagen-->
         <header>
             <!--Mensajes de bienvenida-->
             <h1>Bienvenidos Rancho Picapiedra</h1>
-           <img src="Imagenes/Picapiedra.png" width="350" height="240" alt="picapiedra">
-           <h2>Mesa #1 </h2>
+            <img src="Imagenes/Picapiedra.png" width="350" height="240" alt="picapiedra">
+            <h2>Mesa #1 </h2>
         </header>
-        
+
+        <!--Menu principal con los botones-->
         <section id="mainMenu" class="main-menu">
             <button onclick="loadCategory('hamburguesas')">Hamburguesas</button>
             <button onclick="loadCategory('perritos')">Perritos Calientes</button>
@@ -28,7 +31,7 @@
             <button onclick="loadCategory('chuzos')">Chuzos</button>
         </section>
 
-           <!--Botones del menu-->
+        <!--Botones del menu-->
         <section class="menu-categorias" id="menuItems"></section>
 
         <!--Boton para volver al menu-->
@@ -41,12 +44,11 @@
             <p>Total: <span id="cartTotal">0</span></p>
             <button id="chekoutButton" onclick="checkout()">Realizar pedido</button>
         </div>
-      
+
 
     </div>
 
     <script src="menu_scripts.js"></script>
 </body>
-</html>  
-</body>
+
 </html>
